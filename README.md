@@ -11,15 +11,16 @@
 #include <string>
 #include <string.h>
 #include <fstream>
+#include <iomanip> ///Para setw, right y left;
 
 /*** Cabeceras locales ***/
 /**
-///Datos del profesor
-#include "personaldata.h"       ///Información personal
-#include "academyformation.h"   ///Formación academica
-#include "academyproduction.h"  ///Documentos creados por el profesor
-#include "teaching.h"           ///Clases impartidas
-#include "tutorials.h"          ///Tutorias
+
+#include "personaldata.h"
+#include "academyformation.h"
+#include "academyproduction.h"
+#include "teaching.h"
+#include "tutorials.h"
 
 **/
 class Menu{
@@ -27,7 +28,7 @@ class Menu{
         ///Todas las clases
     public:
         void startMenu();                ///Interfas de menu
-        void access();                   ///Menu entrada de datos del profesor
+        void access();      ///Menu entrada de datos del profesor
         void showData();                 ///Mostrar lista de codigos de profesores
 };
 
