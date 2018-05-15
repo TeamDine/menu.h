@@ -14,9 +14,12 @@
 #include <iomanip> ///Para setw, right y left;
 
 /*** Cabeceras locales ***/
-/**
-
+#include "name.h"
+#include "date.h"
+#include "address.h"
 #include "personaldata.h"
+
+/**
 #include "academyformation.h"
 #include "academyproduction.h"
 #include "teaching.h"
@@ -27,9 +30,10 @@ class Menu{
     private:
         ///Todas las clases
     public:
-        void startMenu();                ///Interfas de menu
-        void access();      ///Menu entrada de datos del profesor
-        void showData();                 ///Mostrar lista de codigos de profesores
+        void startMenu();       ///Interfas de menu
+        void access();          ///Menu entrada de datos del profesor
+        void showData();        ///Mostrar lista de codigos de profesores
+        void insertData();      ///Ingresar datos de un profesor nuevo
 };
 
 #endif // MENU_H_INCLUDED
