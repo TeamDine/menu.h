@@ -29,6 +29,9 @@ class Menu{
         void startMenu();       ///Interfas de menu
         void access();          ///Menu entrada de datos del profesor
         void showData();        ///Mostrar lista de codigos de profesores
+        void modifyData();
+        void deleteData();
+        void findData();
 
         /*** Metodos de Profesor ***/
         void insertPersonalData();          ///Ingresar datos personales
@@ -36,9 +39,13 @@ class Menu{
         void insertAcademicProduction();    ///Ingresar datos de publicaciones
         void insertTeachers();              ///Ingresar datos de las clases impartidas
         void insertTutorials();             ///Ingresar datos de alumnos tutorados
-
+        
 
         /*** Metodos de tabla hash ***/
+        void buildFile();
+        void insertTable();
+        void showTable();
+        void 
 };
 
 #endif // MENU_H_INCLUDED
